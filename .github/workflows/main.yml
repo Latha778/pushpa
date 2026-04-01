@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - name: Print message
-        run: echo "Hello DevOps"
+        run: echo "Day 7 pipeline running"
