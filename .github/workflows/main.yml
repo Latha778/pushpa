@@ -1,4 +1,4 @@
-name: My First Pipeline
+name: DevOps Pipeline
 
 on: [push]
 
@@ -7,5 +7,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print message
-        run: echo "Day 7 pipeline running"
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Show files
+        run: ls
+
+      - name: Simulate Build
+        run: echo "Building application..."
+
+      - name: Simulate Test
+        run: echo "Running tests..."
+
+      - name: Simulate Deploy
+        run: echo "Deploying application..."
